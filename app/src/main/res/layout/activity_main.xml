@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A farmer's Friend!"
+        app:layout_constraintBottom_toTopOf="@+id/newAccountButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/newAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Account"
+        app:layout_constraintTop_toBottomOf="@+id/introText"
+        app:layout_constraintBottom_toTopOf="@+id/existingAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/existingAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing Account"
+        app:layout_constraintTop_toBottomOf="@+id/newAccountButton"
+        app:layout_constraintBottom_toTopOf="@+id/newProspectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/newProspectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Prospect"
+        app:layout_constraintTop_toBottomOf="@+id/existingAccountButton"
+        app:layout_constraintBottom_toTopOf="@+id/myPortfolioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/myPortfolioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Prospect"
+        app:layout_constraintTop_toBottomOf="@+id/newProspectButton"
+        app:layout_constraintBottom_toTopOf="@+id/salesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/salesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sales Numbers"
+        app:layout_constraintTop_toBottomOf="@id/myPortfolioButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
