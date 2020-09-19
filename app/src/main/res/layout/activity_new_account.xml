@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAccountActivity">
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please provide your info.."
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full name"
+        app:layout_constraintTop_toBottomOf="@+id/introText"
+        app:layout_constraintBottom_toTopOf="@+id/primaryPhoneEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <EditText
+        android:id="@+id/primaryPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primary Phone Number"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+        app:layout_constraintBottom_toTopOf="@+id/secondaryPhoneEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <EditText
+        android:id="@+id/secondaryPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Secondary Phone Number"
+        app:layout_constraintTop_toBottomOf="@+id/primaryPhoneEditText"
+        app:layout_constraintBottom_toTopOf="@+id/idNumberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <EditText
+        android:id="@+id/idNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id Number"
+        app:layout_constraintTop_toBottomOf="@+id/secondaryPhoneEditText"
+        app:layout_constraintBottom_toTopOf="@+id/businessTypeEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <EditText
+        android:id="@+id/businessTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Business Type"
+        app:layout_constraintTop_toBottomOf="@+id/idNumberEditText"
+        app:layout_constraintBottom_toTopOf="@+id/locationEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        app:layout_constraintTop_toBottomOf="@+id/businessTypeEditText"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRevenueEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <EditText
+        android:id="@+id/monthlyRevenueEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monthly Revenue"
+        app:layout_constraintTop_toBottomOf="@+id/locationEditText"
+        app:layout_constraintBottom_toTopOf="@+id/saveAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/saveAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        app:layout_constraintTop_toBottomOf="@id/monthlyRevenueEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
